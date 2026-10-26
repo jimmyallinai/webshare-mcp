@@ -1,0 +1,18 @@
+[project]
+name = "webshare-mcp"
+version = "0.1.0"
+description = "Webshare 官方 API 的 MCP 服务封装：填入自己的 API key 即可用 AI 管理代理、订阅与白名单"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+webshare-mcp = "server:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["server"]
